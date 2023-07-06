@@ -1,0 +1,118 @@
+section_subject_domain_of_stock <- sc_node_struct;;
+subject_domain_of_stock <- sc_node_struct;;
+
+section_subject_domain_of_stock => nrel_main_idtf: 
+	[Раздел. Предметная область зоологии]
+	(* <-lang_ru;; *);
+	[Section. Subject domain of zoology]
+	(* <-lang_en;; *);
+	
+<- non_atomic_section;;
+
+section_subject_domain_of_stock <= nrel_section_decomposition: 
+{
+	subject_domain_of_provider;
+ 
+	subject_domain_of_customer;
+	
+	subject_domain_of_product; 
+	
+	subject_domain_of_transactions; 
+	
+	
+};
+
+	
+-> rrel_key_sc_element:
+	
+	consept_provider_id ;
+	consept_customer_id ;
+	consept_product_id;
+	consept_customer_id;
+	consept_provider_name;
+	consept_address;
+	consept_telephone;
+	consept_amount;
+	consept_measure;
+	consept_price;
+	consept_sum;
+	
+	
+	nrel_transaction;
+	nrel_product_move;
+	nrel_profit;
+	subject_domain_of_stock;;
+	
+	
+	
+	
+	
+
+	
+subject_domain_of_stock
+
+=> nrel_main_idtf: [Предметная область зоологии]
+	(*
+		<- lang_ru;;
+	*);
+
+=> nrel_main_idtf: [Subject domain of stock]
+	(*
+		<- lang_en;;
+	*);
+
+<- subject_domain;	
+
+=> nrel_private_subject_domain:	
+
+ 
+	subject_domain_of_provider;
+	
+	subject_domain_of_customer; 
+	
+	subject_domain_of_product; 
+	
+	subject_domain_of_transactions;
+	
+	
+	
+;
+
+<= nrel_private_subject_domain:
+	subject_domain_of_stock;
+
+-> rrel_report:
+	concept_stock;
+
+-> rrel_provider_accounting:	
+	consept_provider_id;
+	consept_provider_name;
+	consept_amount;
+	consept_address;
+	consept_telephone;
+	
+-> rrel_customer_accounting:	
+	consept_customer_id;
+	consept_provider_name;
+	consept_sum;
+	consept_address;
+	consept_telephone;
+-> rrel_benefit_analys_relation:	
+	nrel_transaction;
+	nrel_product_move;
+	nrel_profit;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

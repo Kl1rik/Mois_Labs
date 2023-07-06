@@ -1,0 +1,144 @@
+section_subject_domain_of_zoology <- sc_node_struct;;
+subject_domain_of_zoology <- sc_node_struct;;
+
+section_subject_domain_of_zoology => nrel_main_idtf: 
+	[Раздел. Предметная область зоологии]
+	(* <-lang_ru;; *);
+	[Section. Subject domain of zoology]
+	(* <-lang_en;; *);
+	
+<- non_atomic_section;;
+
+section_subject_domain_of_zoology <= nrel_section_decomposition: 
+{
+	section_subject_domain_of_arnitology;
+ 
+	section_subject_domain_of_teriology;
+	
+	section_subject_domain_of_�carology; 
+	
+	section_subject_domain_of_�arcinology; 
+	
+	section_subject_domain_of_entomology;
+	
+	section_subject_domain_of_lepidopterology; 
+ 
+	section_subject_domain_of_coleopterology;
+	
+	section_subject_domain_of_orthopterology;
+	
+	section_subject_domain_of_arthropodology;
+	
+	section_subject_domain_of_odonatology;
+	
+	section_subject_domain_of_planktology;
+	
+	section_subject_domain_of_nematology;
+	
+	section_subject_domain_of_annelidology;
+	
+	section_subject_domain_of_dipterology
+	
+};
+
+	
+-> rrel_key_sc_element:
+	
+	consept_animal ;
+	consept_reptilia ;
+	consept_bird;
+	consept_insect;
+	consept_arachnid;
+	consept_crustacean;
+	consept_fish;
+	consept_scorpion;
+	consept_feline;
+	consept_canines;
+	consept_cetaceans;
+	consept_sturgeon;
+	
+	nrel_inclusion;
+	nrel_interspecific_competition;
+	nrel_predation;
+	subject_domain_of_zoology;;
+	
+	
+	
+	
+	
+
+	
+subject_domain_of_zoology
+
+=> nrel_main_idtf: [Предметная область зоологии]
+	(*
+		<- lang_ru;;
+	*);
+
+=> nrel_main_idtf: [Subject domain of zoology]
+	(*
+		<- lang_en;;
+	*);
+
+<- subject_domain;	
+
+=> nrel_private_subject_domain:	
+	section_subject_domain_of_arnitology;
+ 
+	section_subject_domain_of_teriology;
+	
+	section_subject_domain_of_�carology; 
+	
+	section_subject_domain_of_�arcinology; 
+	
+	section_subject_domain_of_entomology;
+	
+	section_subject_domain_of_lepidopterology; 
+ 
+	section_subject_domain_of_coleopterology;
+	
+	section_subject_domain_of_orthopterology;
+	
+	section_subject_domain_of_arthropodology;
+	
+	section_subject_domain_of_odonatology;
+	
+	section_subject_domain_of_planktology;
+	
+	section_subject_domain_of_nematology;
+	
+	section_subject_domain_of_annelidology;
+	
+	section_subject_domain_of_dipterology
+;
+	
+<= nrel_private_subject_domain:
+	subject_domain_of_zoology;
+
+-> rrel_maximum_studied_object_class:
+	concept_zoology;
+
+-> rrel_not_maximum_studied_object_class:	
+	consept_animal;
+	consept_insect;
+	
+-> rrel_explored_relation:	
+	nrel_inclusion;
+	nrel_interspecific_competition;
+	nrel_predation;;
+	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
